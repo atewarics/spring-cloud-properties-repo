@@ -1,0 +1,16 @@
+
+* Querying the config server
+
+curl http://root:s3cr3t@localhost:8888/myapplication/default
+
+
+{"name":"myapplication","profiles":["default"],"label":null,"version":"1c7a89aac275d633102ae2c8083cefdb7c5cdff4","state":null,"propertySources":[{"name":"https://github.com/atewarics/spring-cloud-properties-repo/file:C:\\Users\\Ashish\\AppData\\Local\\Temp\\config-repo-12464631164361088700\\myapplication.properties","source":{"my.current.org":"Adobe"}}]}
+
+* Invoking spring cloud client app:
+
+curl http://localhost:8080/whoami/Mr_Pink
+  
+
+Hello! You're Mr_Pink and you work in Adobe...
+
+
